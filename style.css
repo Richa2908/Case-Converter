@@ -1,0 +1,114 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f9ff; /* Light pastel blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-container {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    border-top: 6px solid #ffa5ab; /* Accent pastel pink on top */
+}
+
+h1 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-container, .output-container {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background-color: #ffefef; /* Light pastel pink */
+    height: 150px;
+}
+
+textarea:focus {
+    border-color: #ffa5ab; /* Pastel pink border on focus */
+    background-color: #fff;
+}
+
+textarea[readonly] {
+    background-color: #f0f9ff; /* Light pastel blue for output area */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.convert-btn {
+    width: 30%;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background: #a8e6cf; /* Pastel mint green */
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.convert-btn:hover {
+    background-color: #6cd6b3; /* Darker pastel mint on hover */
+    transform: translateY(-3px);
+}
+
+.convert-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .convert-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+}

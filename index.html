@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Case Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="card">
+            <h1>Case Converter</h1>
+            <p class="subtitle">Transform your text into different cases with ease.</p>
+
+            <div class="input-container">
+                <label for="inputText">Input Text</label>
+                <textarea id="inputText" placeholder="Type or paste your text here..." rows="6"></textarea>
+            </div>
+
+            <div class="button-container">
+                <button class="convert-btn" onclick="toUppercase()">UPPERCASE</button>
+                <button class="convert-btn" onclick="toLowercase()">lowercase</button>
+                <button class="convert-btn" onclick="capitalize()">Capitalize</button>
+            </div>
+
+            <div class="output-container">
+                <label for="outputText">Converted Text</label>
+                <textarea id="outputText" placeholder="Your converted text will appear here..." rows="6" readonly></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
